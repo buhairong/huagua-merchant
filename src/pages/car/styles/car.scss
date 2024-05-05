@@ -1,0 +1,99 @@
+@import "~@/styles/mixin.scss";
+
+// 车辆列表
+.page-wrap {
+	.add-btn-wrap {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		position: fixed;
+		left: 0;
+		bottom: 30px;
+		z-index: 100;
+		padding: 0 32rpx;
+		.add-btn {
+			width: 100%;
+			height: 58px;
+			border-radius: 8px;
+			background: #4170EE;
+			font-size: 17px;
+			color: #FFFFFF;
+			font-weight: 500;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
+// 添加车辆
+.title-wrap {
+	margin-bottom: 16px;
+	height: 44rpx;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 500;
+	color: #1D2129;
+	.left-border {
+		width: 4rpx;
+		height: 24rpx;
+		border-radius: 4rpx;
+		background: #1D2129;
+		margin-right: 16rpx;
+	}
+}
+
+.fixed-btn-wrap {
+	position: fixed;
+	left: 0;
+	bottom: 40px;
+	width: 100vw;
+	padding: 0 32rpx;
+	background: #fff;
+	z-index: 100;
+}
+
+.btn-group {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	.btn {
+		width: 326rpx;
+		height: 116rpx;
+		border-radius: 16rpx;
+		background: #F7F8FA;
+		font-size: 17px;
+		font-weight: 500;
+		color: #1D2129;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.next-step, .save-btn {
+		background: #4170EE;
+		color: #FFFFFF;
+	}
+}
+
+.item-wrap {
+	margin-bottom: 12px;
+	.item-title {
+		margin-bottom: 2px;
+		height: 36rpx;
+		font-size: 12px;
+		line-height: 36rpx;
+		color: #343A40;
+	}
+	.item-content {
+		.input {
+			height: 96rpx;
+			line-height: 96rpx;
+			border-radius: 16rpx;
+			background: #F7F8FA;
+			padding: 0 32rpx;
+			font-size: 14px;
+			color: #1D2129;
+		}
+	}
+}

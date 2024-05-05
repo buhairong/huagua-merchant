@@ -1,0 +1,26 @@
+@import "~@/styles/mixin.scss";
+
+.card {
+	.item-wrap {
+		margin-top: 16px;
+		.item {
+			margin-top: 12px;
+			display: flex;
+			justify-content: space-between;
+			font-size: 14px;
+			padding-left: 20rpx;
+			.item-title {
+				height: 44rpx;
+				line-height: 44rpx;
+				color: #86909C;
+			}
+			.item-content {
+				padding-left: 20rpx;
+				line-height: 44rpx;
+				display: flex;
+				align-items: center;
+				color: #1D2129;
+			}
+		}
+	}
+}

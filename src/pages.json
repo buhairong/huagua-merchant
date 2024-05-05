@@ -1,0 +1,713 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		// "header-top": "@/components/header-top.vue",
+		// "datePicker": "@/components/datePicker.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/workspace/workspace",
+			"style" :                                                                                    
+			{
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/customer/customer",
+			"style": {
+				"navigationBarTitleText": "我的客户",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/customer/customerDetail",
+			"style": {
+				"navigationBarTitleText": "客户详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/sign",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/verifyCode",
+			"style": {
+				"navigationBarTitleText": "验证码",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/wecars",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/plan/planList",
+			"style": {
+				"navigationBarTitleText": "订阅方案",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/plan/newCarPlanDetail",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/plan/oldCarPlanDetail",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/plan/createSuccess",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/workspace/selectCompany",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "切换公司",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/plan/carPlanDetail",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "方案详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/car/insuranceDetail",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#000000",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/car/carList",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "车辆",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/car/addNewCar",
+			"style":                                                                                    
+			{
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/car/addOldCar",
+			"style":                                                                                    
+			{
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/car/createSuccess",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/car/newCarDetail",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "车辆详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/car/oldCarDetail",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "车辆详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/car/addInsurance",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/workspace/wxbview",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/finance/home",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "财务",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/staff/home",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "员工",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/calculator/home",
+			"style": {
+			    "navigationBarTitleText": "",
+			    "navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/price/home",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "新车报价",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/notice/home",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "通知",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/price/setDiscount",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "设置报价",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/plan/newCarSubscribeDetail",
+			"style" :                                                                                    
+			{
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/plan/oldCarSubscribeDetail",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/plan/brandFilter",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "品牌筛选",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/staff/setStaff",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "设置员工",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/customer/setCustomer",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "设置客户",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/middle/index",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/commission/setCommission",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "佣金分配",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/quality/setQuality",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "精品/装潢",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/quality/addQuality",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "添加精品/装潢",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/quality/delQuality",
+			"style":                                                                                    
+			{
+				"navigationBarTitleText": "删除精品/装潢",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "risk",
+			"pages": [
+				{
+					"path": "risk/orderList",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "risk/riskOrderDetail",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "订单审核",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "risk/rejectRiskOrder",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "复审拒绝",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "risk/chooseCertification",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "加收材料",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "risk/addDeposit",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "加收押金",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "risk/checkCertification",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "补充材料",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "risk/rejectCertification",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "补充材料",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		},
+		{
+			"root": "order",
+			"pages": [
+				{
+					"path": "orderInfo/orderList",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "订单",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/handoverOrderDetailInfo",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "订单详情",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/addLicense",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "上传行驶证",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/addInsurance",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "上传保险信息",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/bindcar",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "绑定车辆",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/bindcar-finish",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/checkConfig",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "车辆增配项",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/validOrderCar",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "验车信息",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/validOrderCar1",
+					"style":                                                                                    
+					{
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "车架号照片",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/insurance",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "保险信息",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/uploadDeliveryCarPics",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "车辆照片",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/confirmCarPlateDate",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "上牌日期",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/uploadLicencPics",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "证照信息",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/delivery",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "人车合影",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/setQuality",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "精品/装潢",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "orderInfo/setConfig",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "车辆增配项",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "rental/rentalOrderDetail",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "订单详情",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "rental/uploadDeliveryCarPics",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": " 车辆照片",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "rental/uploadDeliveryCheckInfo",
+					"style":                                                                                    
+					{
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "车架号照片",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		},
+		{
+			"root": "cash",
+			"pages": [
+				{
+					"path": "cash/home",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false,
+						"navigationBarBackgroundColor": "#4170EE",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "cash/cashMoney",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "提现",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "card/bindcard",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "绑定银行卡",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "card/cardinfo",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "银行卡详情",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "card/companyCardinfo",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "公司收款信息",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "identity/identity",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "实名认证",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "identity/face-identity-tip",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "identity/face-identity",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+				    "path" : "agreement/privacyAgreement",
+				    "style" :                                                                                    
+				    {
+				        "navigationBarTitleText": "WECARS隐私政策",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+			]
+		},
+		{
+			"root": "auction",
+			"pages": [
+				{
+					"path": "home",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "竞卖",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "cars/selectOldCar",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "选择车辆",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "cars/setAuctionInfo",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "设置方案",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "cars/createSuccess",
+					"style":                                                                                    
+					{
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path" : "pay/wxAccount",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "线上支付"
+					}
+				},
+				{
+					"path" : "pay/bankAccount",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "银行转账"
+					}
+				},
+				{
+					"path" : "pay/choosePay",
+					"style" :                                                                                    
+					{
+						"navigationBarTitleText": "支付费用",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+				    "path" : "pay/bankPayInfo",
+				    "style" :                                                                                    
+				    {
+				        "navigationBarTitleText": "银行转账",
+				        "enablePullDownRefresh": false
+				    }
+				},
+				{
+				    "path" : "pay/accountDetail",
+				    "style" :                                                                                    
+				    {
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				},
+				{
+				    "path" : "pay/recharge",
+				    "style" :                                                                                    
+				    {
+				        "navigationBarTitleText": "充值",
+				        "enablePullDownRefresh": false
+				    }
+				},
+				{
+				    "path" : "disputes/home",
+				    "style" :                                                                                    
+				    {
+				        "navigationBarTitleText": "交易纠纷",
+				        "enablePullDownRefresh": false
+				    }
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "WECARS商户端",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"condition": {
+		"current": 0,
+		"list": [
+			{
+				"name": "车辆",
+				"path": "pages/car/carList",
+				"query": ""
+			}
+		]
+	}
+}

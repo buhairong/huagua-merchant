@@ -1,0 +1,16 @@
+{
+    "id": "zhilin-cascader",
+    "name": "ZhilinCascader动态级联选择器",
+    "version": "1.4.0",
+    "description": "动态级联选择通用组件",
+    "keywords": [
+        "cascader",
+        "级联选择"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}
