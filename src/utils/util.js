@@ -225,6 +225,7 @@ const url = {
 	updateOrderDecorate: 'merchantapp/orderManage/updateOrderDecorate', // 添加订单装潢
 	saveOtherConfig: 'merchantapp/orderManage/saveOtherConfig', // 添加订单增配项
 	saveMerchantOrderStatus: 'merchantapp/orderManage/saveMerchantOrderStatus', // 修改订单状态
+	esign:'merchantapp/orderManage/updateContractSignStatus',//易签宝在线签约
 	
 	// 客户
 	getClientList: 'merchantapp/clientManager/listByPage', // 订单列表查询

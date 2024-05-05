@@ -55,9 +55,11 @@
 				<view class="btn" @click="handleRefuseOrder">拒绝接单</view>
 				<view class="btn primary-btn" @click="handleOrder(1)">同意接单</view>
 			</view>
-			<view @click="getCarsMethod" v-if="orderDetail.status == 3 && orderDetail.newType == 1 && (!orderDetail.carId || !(orderDetail.carInfo && orderDetail.carInfo.deliveryCarPicsMap.length))" class="bottomBtn">绑定车辆</view>
-			<view v-if="orderDetail.status == 1" @click="contractFn" class="bottomBtn">
+			<view v-if="orderDetail.status == 1 && (!orderDetail.carSubscribeContract || orderDetail.carSubscribeContract.isMerchantSign == 0)" @click="contractFn" class="bottomBtn">
 				线上签约
+			</view>
+			<view @click="getCarsMethod" v-if="orderDetail.status == 3 && orderDetail.newType == 1 && (!orderDetail.carId || !(orderDetail.carInfo && orderDetail.carInfo.deliveryCarPicsMap.length))" class="bottomBtn">
+				绑定车辆
 			</view>
 			<view v-if="orderDetail.status == 13" @click="confirmCarPlateDate" class="bottomBtn">
 				{{orderDetail.predictPlateTime ? '修改上牌信息' : '预计上牌完成日期'}}
@@ -167,17 +169,12 @@ export default {
 	
 	methods: {
 		async contractFn(){
-			const esignInfo = {
-				orderId: this.id,
+			let esignInfo={
+					userCarSubscribeId: this.id,
+					userRole: 2,
 			}
+			const result = await this.$getRequest(this.$url.esign, 'GET', esignInfo)
 			
-			//uni.setStorageSync('esignInfo', esignInfo)
-			
-			// uni.navigateTo({
-			// 	url: `/pagesOrder/identity/face-identity-tip?from=sign&idNum=${this.userInfo.userInfoEntity.idcard}&username=${this.userInfo.name}`
-			// })
-			
-			const result = await this.$getRequest(this.$url.esignCooperation, 'POST', esignInfo)
 			if(result.code == 0) {
 				const contractUrl = result.data.contractUrl || result.data
 				uni.setStorageSync('url', result.data.contractUrl || result.data)

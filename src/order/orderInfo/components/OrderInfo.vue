@@ -8,7 +8,15 @@
 				color="#0A0F2D"
 				:right="false"
 			></u-section>
-			<view class="status-tag">{{orderStatusObj[orderDetail.status]}}</view>
+			<view class="status-tag">
+				<view v-if="orderDetail.status == 1 && orderDetail.carSubscribeContract && orderDetail.carSubscribeContract.isMerchantSign == 1">
+					等待用户签约
+				</view>
+				<view v-else>
+					{{orderStatusObj[orderDetail.status]}}
+				</view>
+			
+			</view>
 		</view>
 		
 		<view class="item-wrap">
