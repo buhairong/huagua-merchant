@@ -46,9 +46,22 @@
 					} else if(this.from === 'orderSign'){
 						const params = uni.getStorageSync('orderSignParams') 
 						if (params) {
-							uni.reLaunch({
-								url: `/order/orderInfo/handoverOrderDetailInfo?id=${params.id}&carId=${params.carId}&newType=${params.newType}`,
+							uni.showLoading({
+								title: '加载中'
 							})
+							
+							const res = await this.$getRequest(this.$url.esign, "GET", {
+								userCarSubscribeId: params.id,
+								userRole: 2,
+							})
+							
+							uni.hideLoading()
+							
+							if (res.code == 0) {
+								uni.reLaunch({
+									url: `/order/orderInfo/handoverOrderDetailInfo?id=${params.id}&carId=${params.carId}&newType=${params.newType}`,
+								})
+							}
 						}
 					} 
 				}
