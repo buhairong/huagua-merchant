@@ -169,8 +169,8 @@ export default {
 	
 	methods: {
 		async contractFn(){
-			if (this.orderDetail.carSubscribeContract && this.orderDetail.carSubscribeContract.contractUrl) {
-				uni.setStorageSync('url', this.orderDetail.carSubscribeContract.contractUrl)
+			if (this.orderDetail.carSubscribeContract && this.orderDetail.carSubscribeContract.contractUrlMerchant) {
+				uni.setStorageSync('url', this.orderDetail.carSubscribeContract.contractUrlMerchant)
 				
 				const params = {
 					id: this.id,
