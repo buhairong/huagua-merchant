@@ -169,15 +169,8 @@ export default {
 	
 	methods: {
 		async contractFn(){
-			let esignInfo={
-					userCarSubscribeId: this.id,
-					userRole: 2,
-			}
-			const result = await this.$getRequest(this.$url.esign, 'GET', esignInfo)
-			
-			if(result.code == 0) {
-				const contractUrl = result.data.contractUrl || result.data
-				uni.setStorageSync('url', result.data.contractUrl || result.data)
+			if (this.orderDetail.carSubscribeContract && this.orderDetail.carSubscribeContract.contractUrl) {
+				uni.setStorageSync('url', this.orderDetail.carSubscribeContract.contractUrl)
 				
 				const params = {
 					id: this.id,
@@ -189,6 +182,29 @@ export default {
 					url: '/pages/workspace/wxbview?from=orderSign'
 				})
 			}
+			
+			
+			
+			// let esignInfo={
+			// 		userCarSubscribeId: this.id,
+			// 		userRole: 2,
+			// }
+			// const result = await this.$getRequest(this.$url.esign, 'GET', esignInfo)
+			
+			// if(result.code == 0) {
+			// 	const contractUrl = result.data.contractUrl || result.data
+			// 	uni.setStorageSync('url', result.data.contractUrl || result.data)
+				
+			// 	const params = {
+			// 		id: this.id,
+			// 		carId: this.carId,
+			// 		newType: this.newType
+			// 	}
+			// 	uni.setStorageSync('orderSignParams', params)
+			// 	uni.navigateTo({
+			// 		url: '/pages/workspace/wxbview?from=orderSign'
+			// 	})
+			// }
 		},
 		
 		handleRefuseOrder() {
@@ -337,6 +353,7 @@ export default {
 					// this.orderDetail.orderSource = 2
 					// this.orderDetail.canDeliveryConfirm = 1
 					//this.orderDetail.newType = 2
+					// this.orderDetail.carSubscribeContract.isMerchantSign = 0
 					
 					this.topInfo.orderNum = data.data.orderNum
 					this.topInfo.userName = data.data.userName
