@@ -5,8 +5,8 @@
  */
 // 开发s
 //const serverUrl = process.env.NODE_ENV === "development" ? "https://api.51cheyaoshi.com/" : "https://wc.tigerlife.cn/";
-//const serverUrl = process.env.NODE_ENV === "development" ? "https://api.51cheyaoshi.com/" : "https://api.51cheyaoshi.com/";
-const serverUrl = process.env.NODE_ENV === "development" ? "https://uat-api.51cheyaoshi.com/" : "https://uat-api.51cheyaoshi.com/";
+const serverUrl = process.env.NODE_ENV === "development" ? "https://api.51cheyaoshi.com/" : "https://api.51cheyaoshi.com/";
+//const serverUrl = process.env.NODE_ENV === "development" ? "https://uat-api.51cheyaoshi.com/" : "https://uat-api.51cheyaoshi.com/";
 // https://partner.51cheyaoshi.com/
 // http://47.100.3.41:8082/doc.html
 // https://manager.wecar-rental.com/
